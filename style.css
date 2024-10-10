@@ -5,10 +5,10 @@ body {
   padding: 0;
 }
 
-#app {
+#uygulama {
   max-width: 500px;
   margin: 50px auto;
-  background: white;
+  background: #e0f7fa;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -29,7 +29,7 @@ ul {
   padding: 0;
 }
 
-li {
+Grv {
   background-color: #fff;
   padding: 10px;
   margin: 5px 0;
@@ -40,7 +40,7 @@ li {
   border-radius: 4px;
 }
 
-li.completed {
+Grv.completed {
   text-decoration: line-through;
 }
 
