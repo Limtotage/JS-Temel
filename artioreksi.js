@@ -5,5 +5,5 @@ if (sayi > 0) {
 } else if (sayi < 0) {
   console.log("Negatif Bir Sayi Girdiniztir");
 } else {
-  console.log("Sıfır Rakamını Girdiniz.");
+  console.log("Sifir Rakamini Girdiniz.");
 }
