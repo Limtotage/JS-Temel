@@ -1,39 +1,38 @@
-// HTML öğelerine erişim
-const taskInput = document.getElementById('taskInput');
-const addTaskButton = document.getElementById('addTaskButton');
-const taskList = document.getElementById('taskList');
+const Gorev = document.getElementById('Gorev');
+const EkleButon = document.getElementById('EkleButon');
+const Liste = document.getElementById('Liste');
 
 // Görev ekleme işlemi
-addTaskButton.addEventListener('click', () => {
-  const taskText = taskInput.value;
+EkleButon.addEventListener('click', () => {
+  const Grv = Gorev.value;
 
-  // Boş görev eklenmesini engelle
-  if (taskText.trim() === '') {
+  // Boş görev engelleme
+  if (Grv.trim() === '') {
     alert('Lütfen bir görev girin.');
     return;
   }
 
-  // Yeni bir 'li' öğesi oluştur
-  const taskItem = document.createElement('li');
-  taskItem.textContent = taskText;
+  // Yeni bir 'Grv' öğesi oluşturma
+  const GrvElemani = document.createElement('Grv');
+  GrvElemani.textContent = Grv;
 
   // Görev tamamlandığında üstünü çizmek için tıklama olayı
-  taskItem.addEventListener('click', () => {
-    taskItem.classList.toggle('completed');
+  GrvElemani.addEventListener('click', () => {
+    GrvElemani.classList.toggle('completed');
   });
 
-  // Silme butonu ekle
-  const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'Sil';
-  deleteButton.classList.add('delete');
+  // Silme butonu
+  const Siltusu = document.createElement('button');
+  Siltusu.textContent = 'Sil';
+  Siltusu.classList.add('delete');
   
-  deleteButton.addEventListener('click', () => {
-    taskList.removeChild(taskItem);
+  Siltusu.addEventListener('click', () => {
+    Liste.removeChild(GrvElemani);
   });
 
-  taskItem.appendChild(deleteButton);
-  taskList.appendChild(taskItem);
+  GrvElemani.appendChild(Siltusu);
+  Liste.appendChild(GrvElemani);
 
-  // Girdi alanını temizle
-  taskInput.value = '';
+  // Girdi alanını temizleme
+  Gorev.value = '';
 });
