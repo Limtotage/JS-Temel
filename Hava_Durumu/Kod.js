@@ -1,6 +1,6 @@
 // Hava durumu OpenWeatherMap API'si anahtari Kendi Anahtarinizi Kullanin. 
 //Hesap oluşturup kullanıcı ayarları sekmesinden benim api anahtarlarım bölümünden anahtarınızı alabilirsiniz. 
-const API_KEY = '85b184ac251f22328849085f7a556bf7'; // Buraya kendi API anahtarınızı girin
+const API_KEY = 'api anahtari'; // Buraya kendi API anahtarınızı girin
 
 document.getElementById('Hava_Durumunu_Al').addEventListener('click', Hava_Durumunu_Al_Fonksiyonu);
 
