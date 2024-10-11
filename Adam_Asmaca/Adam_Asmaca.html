@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelime Tahmin Oyunu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            line-height: 2;
+        }
+        #Kelime {
+            font-size: 2em;
+            letter-spacing: 10px;
+        }
+        #Mesaj {
+            color: red;
+            font-size: 1.2em;
+        }
+        #Hak {
+            position: absolute;
+            top: 160px; 
+            left: 380px;
+            color:rgb(83, 83, 83);
+            font-size: 1.5em;
+        }
+        #puan {
+            position: absolute;
+            top: 185px; 
+            left: 380px;
+            color:rgb(83, 83, 83);
+            font-size: 1.5em;
+        }
+        #seri {
+            position: absolute;
+            top: 210px; 
+            left: 380px;
+            color:rgb(83, 83, 83);
+            font-size: 1.5em;
+        }
+        #Yanlis_Tahminler {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Kelime Tahmin Oyunu</h1>
+    <div id="Kelime">_ _ _ _ _\n</div>
+    <input type="text" id="Tahmin_Girdisi" maxlength="1" placeholder="Bir harf tahmin et">
+    <button onclick="Tahmin_Et()">Tahmin Et</button>
+    <button onclick="yeni_kelime()">Yeni Kelime</button>
+    <div id="Mesaj"></div>
+    <div id="Hak"></div>
+    <div id="puan"></div>
+    <div id="seri"></div>
+    <div id="Yanlis_Tahminler"></div>
+
+    <script src="Kod.js"></script>
+</body>
+</html>
