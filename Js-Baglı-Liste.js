@@ -1,15 +1,15 @@
-class Dugum {
+class Dugum {                                                        //Bağlı Liste için Düğüm Nesnesi Oluşturulur.
     constructor(Veri) {
         this.Veri = Veri; 
         this.Sonraki = null;  
     }
 }
-class Bagli_Liste {
+class Bagli_Liste {                                                  //Düğüm Nesnesini içerisinde barındıran Bağlı Liste Nesnesi Oluşturulur.
     constructor() {
         this.Bas = null; 
     }
 
-    Ekle(Veri) {
+    Ekle(Veri) {                                                     //Düğüm Eklemeyi Sağlayan Metot
         let Yeni_Dugum = new Dugum(Veri);
         if (this.Bas === null) {
             this.Bas = Yeni_Dugum;
@@ -22,7 +22,7 @@ class Bagli_Liste {
         }
     }
 
-    Listeyi_Yazdir() {
+    Listeyi_Yazdir() {                                                //Bağlı Listeyi Yazdıran Metot
         let Simdiki = this.Bas;
         while (Simdiki !== null) {
             console.log(Simdiki.Veri);
@@ -30,7 +30,7 @@ class Bagli_Liste {
         }
     }
 
-    Bul(Veri) {
+    Bul(Veri) {                                                       //Düğüm Aramayı Sağlayan Metot
         let Simdiki = this.Bas;
         let i = 1;
         while (Simdiki !== null) {
@@ -43,7 +43,7 @@ class Bagli_Liste {
         }
         return false; 
     }
-    Eleman_Sil(Veri){
+    Eleman_Sil(Veri){                                                 // Listeden Bir Eleman Silen Metot
         let Simdiki = this.Bas;
         let Onceki =this.Bas;
         let i = 1;
@@ -62,7 +62,7 @@ class Bagli_Liste {
         }
         return false;
     }
-    Listeyi_Bosalt() {
+    Listeyi_Bosalt() {                                                 // Listeyi Boşaltan Metot
         let Simdiki = this.Bas;
         while (Simdiki !== null) {
             let Sonraki_Dugum = Simdiki.Sonraki;
@@ -74,13 +74,13 @@ class Bagli_Liste {
     }
 }
 
-let Listem = new Bagli_Liste();
+let Listem = new Bagli_Liste();                                        // Liste Oluşturulur.
 Listem.Ekle(10);
 Listem.Ekle(20);
 Listem.Ekle(30);
 Listem.Ekle(40);
 console.log("Bağlı listedeki elemanlar:");
-Listem.Listeyi_Yazdir();
+Listem.Listeyi_Yazdir();                                               // Bağlı listeyi yazdır
 let arananDeger = 30;
 let silenecekdeger= 10;
 
