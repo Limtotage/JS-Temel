@@ -1,6 +1,6 @@
-let sayi = prompt("Bir sayi girin:");
+let sayi = prompt("Bir sayi girin:");                // Sayı Girdisi Alınır.
 
-if (sayi > 0) {
+if (sayi > 0) {                                      // Sayı if else yapısı Negatif, Pozitif ya da 0 olduğu anlaşılır.
   console.log("Pozitif Bir Sayi Girdiniz.");
 } else if (sayi < 0) {
   console.log("Negatif Bir Sayi Girdiniztir");
